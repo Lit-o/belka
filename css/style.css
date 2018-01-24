@@ -45,10 +45,9 @@ https://google-webfonts-helper.herokuapp.com/*/
 
 a {
   text-decoration: none;
-
 }
 
-.first-row {
+.header-first-row {
   display: -webkit-flex;
      display: -moz-flex;
       display: -ms-flex;
@@ -58,13 +57,13 @@ a {
   height: 30px;
   line-height: 30px;
 
-  justify-content: space-between;
+  justify-content: flex-end;
 
 
   background-color: #e9e9f1;
 }
 
-.number:before {
+.header-number:before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -80,7 +79,7 @@ a {
   vertical-align: baseline;
 }
 
-.number {
+.header-number {
   vertical-align: middle;
   margin: 0 15px;
 
@@ -91,12 +90,16 @@ a {
   color: #000;
 }
 
-.kebab {
+.header-kebab {
   display: none;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-   .kebab {
+   .header-first-row{
+    justify-content: space-between;
+   }
+
+   .header-kebab {
     display: inline-block;
     width: 20px;
     height: 30px;
@@ -111,6 +114,14 @@ a {
     background-image: url(../img/kebab.png);
 
     vertical-align: middle;
+  }
+
+  .header-time {
+    display: none;
+  }
+
+  .header-plase{
+    display: none;
   }
 }
 
