@@ -43,6 +43,11 @@ https://google-webfonts-helper.herokuapp.com/*/
 
 /*Закончил подключать шрифты*/
 
+p {
+  padding: 0;
+   margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -63,31 +68,74 @@ a {
   background-color: #e9e9f1;
 }
 
-.header-number:before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-
-  margin-right: 10px;
-
-  -webkit-background-size: 100%;
-          background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url(../img/header-call.png);
-
-  vertical-align: baseline;
-}
-
-.header-number {
+.first-row__column {
   vertical-align: middle;
-  margin: 0 15px;
+  margin: 0 25px;
 
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
   color: #000;
+}
+
+.header-time {
+   margin-left: 15px;
+}
+.header-marker {
+  margin-right: 15px;
+}
+
+
+.header-time:before {
+  content: '';
+  display: inline-block;
+   width: 19px;
+  height: 30px;
+
+  margin-right: 10px;
+
+  -webkit-background-size: 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-image: url(../img/time.png);
+
+  vertical-align: middle;
+}
+
+.header-number:before {
+  content: '';
+  display: inline-block;
+   width: 16px;
+  height: 30px;
+
+  margin-right: 10px;
+
+  -webkit-background-size: 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 33%;
+  background-image: url(../img/header-call.png);
+
+  vertical-align: middle;
+}
+
+.header-marker:before {
+  content: '';
+  display: inline-block;
+   width: 13px;
+  height: 30px;
+
+  margin-right: 10px;
+
+  -webkit-background-size: 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  background-image: url(../img/placeholder.png);
+
+  vertical-align: middle;
 }
 
 .header-kebab {
@@ -120,32 +168,12 @@ a {
     display: none;
   }
 
-  .header-plase{
+  .header-marker{
     display: none;
   }
 }
 
-
-
-/*@media (min-width: 320px) {
-  .kebab {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-
-  margin-right: 15px;
-
-  -webkit-background-size: 100%;
-          background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url(../img/kebab.png);
-
-  vertical-align: middle;
-  }
-}*/
-
-
-
+/*Закончил адаптивную первую серую линейку*/
 
 
 
