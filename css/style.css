@@ -41,7 +41,7 @@ https://google-webfonts-helper.herokuapp.com/*/
        url('../fonts/montserrat-v12-latin_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
-/*Закончил подключать шрифты*/
+/*              Закончил подключать шрифты              */
 
 * {
   padding: 0;
@@ -180,7 +180,7 @@ a {
   }
 }
 
-/*Закончил адаптивную первую серую линейку*/
+/*              Закончил адаптивную первую серую линейку              */
 
 .header-second-row {
   display: -webkit-flex;
@@ -291,6 +291,74 @@ line-height: 88px;
     margin-right: 15px;
   }
 }
+
+/*              Закончил стилизовать вторую линию хедора             */
+
+
+
+.welcome-title {
+  position: relative;
+
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 44px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+
+}
+
+.welcome-title:after {
+  content: '';
+  position: absolute;
+  right: 0; left: 0;
+  margin: 0 auto;
+  bottom: -10px;
+
+  display: block;
+  width: 94px;
+  height: 2px;
+
+  background-color: #000;
+}
+
+.welcome-main-text {
+  margin-left: 15px;
+  margin-top: 114px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+@media (min-width: 1279px){
+  .welcome-main-text {
+    margin-left: 45px;
+  }
+  .belka-welcome{
+  height: 650px;
+
+  background-image: url(../img/first-section-big.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: 100%;
+  background-position: 50% 80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 h1 {
   font-family: Montserrat, sant-serif;
