@@ -180,7 +180,7 @@ a {
   }
 }
 
-/*              Закончил адаптивную первую серую линейку              */
+/*              Закончил адаптивную первую линейку              */
 
 .header-second-row {
   display: -webkit-flex;
@@ -334,28 +334,86 @@ line-height: 88px;
   color: #000;
 }
 
-@media (min-width: 1279px){
+.welcome-buy-btn {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 35px;
+  padding: 10px 25px;
+  vertical-align: middle;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  color: #000;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #efeff4;
+  border: 1px solid #000;
+}
+
+.welcome-main-text.mob {
+  display: none;
+}
+@media (min-width: 1280px) {
   .welcome-main-text {
     margin-left: 45px;
   }
   .belka-welcome{
   height: 650px;
 
-  background-image: url(../img/first-section-big.jpg);
+  background-image: url(../img/first-section-mid-big.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  background-size: 100%;
-  background-position: 50% 80%;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  background-position: 50% 70%;
+  }
+  .welcome-buy-btn {
+  display: none;
   }
 }
 
+@media (min-width: 768px) and (max-width: 1279px) {
+  .welcome-main-text {
+    font-size: 16px;
+  }
+  .belka-welcome{
+  height: 650px;
+
+  background-image: url(../img/first-section-mid-big.jpg);
+  background-repeat: no-repeat;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 80%;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .welcome-main-text {
+    display: none;
+  }
+  .welcome-main-text.mob {
+    display: block;
+    margin-top: 80px;
+  }
+  .belka-welcome{
+  height: 403px;
+
+  background-image: url(../img/first-section-small.jpg);
+  background-repeat: no-repeat;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 80%;
+  }
+
+}
 
 
-
-
-
-
-
+/*              Закончил стилизовать полностью адаптивную первую секцию Welcome             */
 
 
 
