@@ -324,7 +324,7 @@ line-height: 88px;
   background-color: #000;
 }
 
-.welcome-main-text {
+.welcome-text {
   margin-left: 15px;
   margin-top: 114px;
 
@@ -352,11 +352,15 @@ line-height: 88px;
   border: 1px solid #000;
 }
 
-.welcome-main-text.mob {
+.welcome-text.mob {
   display: none;
 }
 @media (min-width: 1280px) {
-  .welcome-main-text {
+  .welcome-text-container{
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .welcome-text {
     margin-left: 45px;
   }
   .belka-welcome{
@@ -375,7 +379,7 @@ line-height: 88px;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-  .welcome-main-text {
+  .welcome-text {
     font-size: 16px;
   }
   .belka-welcome{
@@ -392,10 +396,10 @@ line-height: 88px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .welcome-main-text {
+  .welcome-text {
     display: none;
   }
-  .welcome-main-text.mob {
+  .welcome-text.mob {
     display: block;
     margin-top: 80px;
   }
@@ -415,12 +419,143 @@ line-height: 88px;
 
 /*              Закончил стилизовать полностью адаптивную первую секцию Welcome             */
 
+.tracks {
+  height: 860px;
+
+  background-image: url(../img/tracks-big.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  background-position: 50% 50%;
+}
 
 
+
+.tracks-title {
+  position: relative;
+
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+
+}
+
+.tracks-title:after {
+  content: '';
+  position: absolute;
+  right: 0; left: 0;
+  margin: 0 auto;
+  bottom: -10px;
+
+  display: block;
+  width: 94px;
+  height: 2px;
+
+  background-color: #fff;
+}
+
+.track-header {
+  width: 215px;
+  height: 145px;
+
+  background-color: #22313f;
+  opacity: 0.75;
+}
+
+.track-title{
+
+  text-align: center;
+  font-family: Montserrat, sant-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.track-high {
+  text-align: center;
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+
+  padding-bottom: 8px;
+}
+.track-high:before {
+  content: '';
+  display: inline-block;
+   width: 35px;
+  height: 22px;
+
+  margin-right: 12px;
+
+  -webkit-background-size: 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../img/track-high.png);
+
+  vertical-align: middle;
+}
+.track-age {
+  text-align: center;
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+.track-age:before {
+  content: '';
+  display: inline-block;
+   width: 24px;
+  height: 27px;
+
+  margin-right: 19px;
+
+  -webkit-background-size: 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../img/track-age.png);
+
+  vertical-align: middle;
+}
+
+.track-main{
+  line-height: 0;
+}
+
+.track-footer{
+  width: 215px;
+  height: 155px;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 30px;
+  background-color: #54606a;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #e7e7f2;
+
+
+  text-align: center;
+}
 
 h1 {
   font-family: Montserrat, sant-serif;
   font-weight: 700;
+
 
 
   color: #000;
