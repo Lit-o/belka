@@ -459,7 +459,23 @@ line-height: 88px;
 
   background-color: #fff;
 }
+.tracks-container {
+  display: -webkit-flex;
+     display: -moz-flex;
+      display: -ms-flex;
+       display: -o-flex;
+          display: flex;
 
+  width: 1155px;
+  margin: 0 auto;
+
+  padding-top: 50px;
+
+  justify-content: space-between;
+}
+.track:nth-child(even) {
+  margin-top: 80px;
+}
 .track-header {
   width: 215px;
   height: 145px;
@@ -469,7 +485,6 @@ line-height: 88px;
 }
 
 .track-title{
-
   text-align: center;
   font-family: Montserrat, sant-serif;
   font-weight: 700;
@@ -533,22 +548,29 @@ line-height: 88px;
   line-height: 0;
 }
 
-.track-footer{
+.track-footer-container {
+
+  line-height: 155px;
+
   width: 215px;
   height: 155px;
-
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #54606a;
+}
+.track-footer{
+  display: inline-block;
+
+  line-height: 1.15;
 
   font-family: Montserrat, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #e7e7f2;
-
-
+  vertical-align: middle;
   text-align: center;
 }
 
