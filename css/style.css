@@ -142,28 +142,65 @@ a {
 .header-kebab {
   display: none;
 }
+.header-cross {
+  display: none;
+}
+.kebab-menu {
+  display: none;
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
-   .header-first-row{
+  .header-first-row{
     justify-content: space-between;
    }
 
-   .header-kebab {
+  .header-kebab {
     display: inline-block;
-    width: 20px;
+    width: 30px;
     height: 30px;
 
     margin-right: 15px;
 
+    border:0;
 
-    -webkit-background-size: 100%;
-            background-size: 100%;
+    /*-webkit-background-size: 100%;
+            background-size: 100%;*/
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-image: url(../img/kebab.png);
-
+    cursor:pointer;
     vertical-align: middle;
+
+    background-color: #e9e9f1;
   }
+
+  .header-cross {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    margin-right: 15px;
+
+    border:0;
+    padding-top: 5px;
+    font-size:40px;
+
+    text-align: center;
+    cursor:pointer;
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: #e9e9f1;
+  }
+
+.kebab-menu{z-index:10; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.kebab-menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.kebab-menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.kebab-menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.kebab-menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.kebab-menu ul li a:hover {  color: #666; text-decoration:none;}
+.kebab-menu a{text-decoration:none; color:#666;}
+.kebab-menu a:hover{text-decoration:none; color:#666;}
+
 
   .header-time {
     display: none;
@@ -171,6 +208,12 @@ a {
 
   .header-marker{
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .kebab-menu-list {
+  display: none;
   }
 }
 
@@ -276,6 +319,10 @@ line-height: 88px;
 @media (min-width: 320px) and (max-width: 767px) {
   .header-second-row {
     display: none;
+  }
+
+  .header-list__item{
+
   }
 }
 
