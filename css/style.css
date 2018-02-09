@@ -669,13 +669,14 @@ line-height: 88px;
 @media (min-width: 768px) and (max-width: 1279px) {
   .tracks-container {
 
-  width: 665px;
-  overflow: hidden;
+  position: relative;
+
+  width: 750px;
   margin: 0 auto;
 
   padding-top: 50px;
 
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   }
 
   .track:nth-child(even) {
@@ -684,8 +685,14 @@ line-height: 88px;
 
   .track {
     display: inline-block;
-    margin-right: 10px;
+
+    /*решился конфликт с отступом и slick.js*/
+    padding-left: 20px;
+
+
   }
+
+
 }
 
 h1 {
@@ -846,4 +853,69 @@ h1 {
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+
+
+
+/*Настроил кнопки prev и next*/
+
+.slick-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -31px;
+  z-index: 100;
+
+
+  margin: auto;
+
+  font: 0/0 a;
+
+  display: block;
+
+  width: 21px;
+  height: 41px;
+
+  background: url(../img/prev.png) 0 0 no-repeat;
+
+  border: 0;
+}
+
+.slick-next{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -31px;
+  z-index: 100;
+
+
+  margin: auto;
+
+  font: 0/0 a;
+
+  display: block;
+
+  width: 21px;
+  height: 41px;
+
+  background: url(../img/prev.png) 0 0 no-repeat;
+
+  border: 0;
+
+
+
+  transform: rotate(180deg);
+}
+*,
+*:active,
+*:focus {
+    outline: none;
+}
+
+
+.slick-arrow:
+
+.slick-prev {
+
 }

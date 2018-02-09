@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+  // подключаю мобильное меню
+
   $( ".header-cross" ).hide();
   $( ".kebab-menu" ).hide();
   $( ".header-kebab" ).click(function() {
@@ -15,6 +17,9 @@ $( document ).ready(function() {
       $( ".header-kebab" ).show();
     });
   });
+
+  // подключаю карусель
+
   var timer;
   $(window).on('resize', function(){
     if ( timer ) clearTimeout(timer);
