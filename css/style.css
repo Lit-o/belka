@@ -734,6 +734,10 @@ line-height: 88px;
   .tracks {
     height: 707px;
   }
+  .track:nth-child(even) .track-footer-container {
+    background-color: #54606a;
+
+  }
 }
 
 h1 {
