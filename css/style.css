@@ -772,50 +772,153 @@ a {
   background-color: #000;
 }
 
-.discounts-container {
-  width: 1187px;
+@media (min-width: 320px) {
+  .discounts-container {
+  width: 292px;
   margin: 0 auto;
-  margin-top: 86px;
+  margin-top: 64px;
+  padding-bottom: 50px;
   font-size: 0;
 
-}
-
-.discount-item {
+  }
+  .discount-item {
   display: inline-block;
-  width: 359px;
-  height: 343px;
-  margin-right: 55px;
-  padding: 44px 20px;
+  width: 292px;
+  height: 253px;
+  margin-right: 0;
+  margin-top: 10px;
+  padding: 20px 14px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 
   background: #8e9d9d ;
 
-  line-height: 253px;
-}
-.discount-item:last-child {
-  margin-right: 0px;
-}
-.discount-item:nth-child(1) {
-  background: #8e9d9d url(../img/discounts-1.jpg) 50% 50% no-repeat
-}
-.discount-item:nth-child(2) {
-  background: #8e9d9d url(../img/discounts-2.jpg) 50% 50% no-repeat
-}
-.discount-item:nth-child(3) {
-  background: #8e9d9d url(../img/discounts-3.jpg) 50% 50% no-repeat
+  line-height: 213px;
+  }
+
+  .discount-item:nth-child(1) {
+    background: #8e9d9d url(../img/discounts-1-mob.jpg) 50% 50% no-repeat
+  }
+  .discount-item:nth-child(2) {
+    background: #8e9d9d url(../img/discounts-2-mob.jpg) 50% 50% no-repeat
+  }
+  .discount-item:nth-child(3) {
+    background: #8e9d9d url(../img/discounts-3-mob.jpg) 50% 50% no-repeat
+  }
+
+  .discount-description {
+    display: inline-block;
+
+    font-family: Montserrat, sant-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    line-height: 24px;
+    vertical-align: bottom;
+  }
 }
 
-.discount-description {
+@media (min-width: 768px) {
+  .discounts-container {
+  width: 740px;
+  margin-top: 64px;
+
+  }
+  .discount-item {
   display: inline-block;
-  font-family: Montserrat, sant-serif;
-  font-weight: 700;
-  font-size: 25px;
-  color: #fff;
-  line-height: 30px;
-  vertical-align: bottom;
+  width: 740px;
+  height: 253px;
+  margin-right: 0;
+  margin-top: 10px;
+  padding: 20px 44px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  background: #8e9d9d ;
+
+  line-height: 213px;
+  }
+
+  .discount-item:nth-child(1) {
+    background: #8e9d9d url(../img/discounts-1-long.jpg) 50% 50% no-repeat
+  }
+  .discount-item:nth-child(2) {
+    background: #8e9d9d url(../img/discounts-2-long.jpg) 50% 50% no-repeat
+  }
+  .discount-item:nth-child(3) {
+    background: #8e9d9d url(../img/discounts-3-long.jpg) 50% 50% no-repeat
+  }
+
+  .discount-description {
+    display: inline-block;
+
+    font-family: Montserrat, sant-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: bottom;
+  }
 }
+
+@media (min-width: 1280px) {
+  .discounts-container {
+    width: 1187px;
+    margin: 0 auto;
+    margin-top: 86px;
+    font-size: 0;
+  }
+
+
+  .discount-item {
+    display: inline-block;
+    width: 359px;
+    height: 343px;
+    margin-right: 55px;
+    padding: 44px 20px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    background: #8e9d9d ;
+
+    line-height: 253px;
+  }
+  .discount-item:last-child {
+    margin-right: 0px;
+  }
+  .discount-item:nth-child(1) {
+    background: #8e9d9d url(../img/discounts-1.jpg) 50% 50% no-repeat
+  }
+  .discount-item:nth-child(2) {
+    background: #8e9d9d url(../img/discounts-2.jpg) 50% 50% no-repeat
+  }
+  .discount-item:nth-child(3) {
+    background: #8e9d9d url(../img/discounts-3.jpg) 50% 50% no-repeat
+  }
+
+  .discount-description {
+    display: inline-block;
+
+    font-family: Montserrat, sant-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: bottom;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 h1 {
   font-family: Montserrat, sant-serif;
