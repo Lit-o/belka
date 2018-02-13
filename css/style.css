@@ -296,18 +296,18 @@ a {
 }
 
 .header-nav {
--webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-        box-sizing: border-box;
-height: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
 }
 
 .header-list {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-height: 100%;
-line-height: 88px;
+  height: 100%;
+  line-height: 88px;
 }
 
 .header-list__item {
@@ -414,6 +414,7 @@ line-height: 88px;
   font-family: Montserrat, sant-serif;
   font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
   color: #000;
 }
 
@@ -447,7 +448,7 @@ line-height: 88px;
     margin: 0 auto;
   }
   .welcome-text {
-    margin-left: 45px;
+    margin-left: 44px;
   }
   .belka-welcome{
   height: 650px;
@@ -455,7 +456,7 @@ line-height: 88px;
   background-image: url(../img/first-section-mid-big.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover;
+          background-size: cover;
 
   background-position: 50% 70%;
   }
@@ -466,9 +467,9 @@ line-height: 88px;
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .welcome-text {
-    font-size: 16px;
+  font-size: 16px;
   }
-  .belka-welcome{
+  .belka-welcome {
   height: 650px;
 
   background-image: url(../img/first-section-mid-big.jpg);
@@ -488,6 +489,7 @@ line-height: 88px;
   .welcome-text.mob {
     display: block;
     margin-top: 80px;
+
   }
   .belka-welcome{
   height: 403px;
@@ -513,7 +515,7 @@ line-height: 88px;
   -webkit-background-size: cover;
   background-size: cover;
 
-  background-position: 50% 50%;
+  background-position: 50% 90%;
 }
 
 
@@ -740,6 +742,81 @@ line-height: 88px;
   }
 }
 
+/*              Акции для старичка              */
+
+.discounts-title {
+  position: relative;
+
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 44px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+
+}
+
+.discounts-title:after {
+  content: '';
+  position: absolute;
+  right: 0; left: 0;
+  margin: 0 auto;
+  bottom: -10px;
+
+  display: block;
+  width: 94px;
+  height: 2px;
+
+  background-color: #000;
+}
+
+.discounts-container {
+  width: 1187px;
+  margin: 0 auto;
+  margin-top: 86px;
+  font-size: 0;
+
+}
+
+.discount-item {
+  display: inline-block;
+  width: 359px;
+  height: 343px;
+  margin-right: 55px;
+  padding: 44px 20px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  background: #8e9d9d ;
+
+  line-height: 253px;
+}
+.discount-item:last-child {
+  margin-right: 0px;
+}
+.discount-item:nth-child(1) {
+  background: #8e9d9d url(../img/discounts-1.jpg) 50% 50% no-repeat
+}
+.discount-item:nth-child(2) {
+  background: #8e9d9d url(../img/discounts-2.jpg) 50% 50% no-repeat
+}
+.discount-item:nth-child(3) {
+  background: #8e9d9d url(../img/discounts-3.jpg) 50% 50% no-repeat
+}
+
+.discount-description {
+  display: inline-block;
+  font-family: Montserrat, sant-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  line-height: 30px;
+  vertical-align: bottom;
+}
+
 h1 {
   font-family: Montserrat, sant-serif;
   font-weight: 700;
@@ -748,7 +825,9 @@ h1 {
 
   color: #000;
 }
-
+.futu{
+  height: 200px;
+}
 
 
 
