@@ -889,9 +889,41 @@ a {
 }
 
 
+/*Закончил стилизацию акций*/
 
 
+.form-demonstration-title {
+  position: relative;
 
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 44px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+
+}
+
+.form-demonstration-title:after {
+  content: '';
+  position: absolute;
+  right: 0; left: 0;
+  margin: 0 auto;
+  bottom: -10px;
+
+  display: block;
+  width: 94px;
+  height: 2px;
+
+  background-color: #000;
+}
+
+.form-demonstration {
+  width: 1280px;
+  margin: 0 auto;
+}
 
 
 
