@@ -919,15 +919,92 @@ a {
 
   background-color: #000;
 }
+.form-demonstration-subtitle{
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 19px;
 
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+}
 .form-demonstration {
-  width: 1280px;
-  margin: 0 auto;
+  margin-bottom: 94px;
 }
 
+.get-contact {
+  width: 290px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 40px 10px;
+  padding-top: 20px;
+  background-color: #ccc;
+
+  text-align: center;
+}
+
+.demonstration-item {
+  padding-bottom: 20px;
+  line-height: 30px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.demonstration-item input {
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+
+  font-size: 16px;
 
 
+  border: 1px solid #8e9d9d;
+  border-radius: 5px;
+}
+.demonstration-item-check {
+  width: 200px;
+  margin: 0 auto;
 
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 20px;
+
+}
+.demonstration-item-check a {
+  text-decoration: underline;
+}
+.demonstration-item-check input {
+  width: 14px;
+  height: 14px;
+}
+
+.form-buttom {
+  padding: 5px 10px;
+  margin-top: 10px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+
+  border: 1px solid #8e9d9d;
+  border-radius: 5px;
+
+  transition: all 0.3s linear;
+}
+
+.form-buttom:hover {
+  background-color: #8e9d9d;
+  border: 1px solid #fff;
+  color: #fff;
+}
 
 h1 {
   font-family: Montserrat, sant-serif;
