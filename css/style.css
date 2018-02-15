@@ -62,18 +62,16 @@ a {
       display: -ms-flex;
        display: -o-flex;
           display: flex;
+  justify-content: flex-end;
   width: 100%;
   height: 30px;
 
   line-height: 30px;
 
-  justify-content: flex-end;
-
   background-color: #e9e9f1;
 }
 
 .first-row__column {
-  vertical-align: middle;
   margin: 0 25px;
 
   font-family: Montserrat, sans-serif;
@@ -81,11 +79,14 @@ a {
   line-height: 30px;
   font-weight: 300;
   color: #000;
+
+  vertical-align: middle;
 }
 
 .header-time {
-   margin-left: 15px;
+  margin-left: 15px;
 }
+
 .header-marker {
   margin-right: 15px;
 }
@@ -94,9 +95,8 @@ a {
 .header-time:before {
   content: '';
   display: inline-block;
-   width: 19px;
+  width: 19px;
   height: 30px;
-
   margin-right: 10px;
 
   -webkit-background-size: 100%;
@@ -113,7 +113,6 @@ a {
   display: inline-block;
   width: 16px;
   height: 30px;
-
   margin-right: 10px;
 
   -webkit-background-size: 100%;
@@ -128,9 +127,8 @@ a {
 .header-marker:before {
   content: '';
   display: inline-block;
-   width: 13px;
+  width: 13px;
   height: 30px;
-
   margin-right: 10px;
 
   -webkit-background-size: 100%;
@@ -145,9 +143,11 @@ a {
 .header-kebab {
   display: none;
 }
+
 .header-cross {
   display: none;
 }
+
 .kebab-menu {
   display: none;
 }
@@ -161,10 +161,7 @@ a {
     display: inline-block;
     width: 30px;
     height: 30px;
-
     margin-right: 15px;
-
-    border:0;
 
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -172,6 +169,7 @@ a {
     cursor:pointer;
     vertical-align: middle;
 
+    border:0;
     background-color: #e9e9f1;
   }
 
@@ -179,10 +177,7 @@ a {
     display: inline-block;
     width: 30px;
     height: 30px;
-
     margin-right: 15px;
-
-    border:0;
     padding-top: 5px;
 
     font-size:40px;
@@ -192,11 +187,13 @@ a {
     cursor:pointer;
     vertical-align: middle;
     background-color: #e9e9f1;
+    border:0;
   }
 
   .kebab-menu {
     position:absolute;
     z-index:10;
+
     width:100%;
 
     font-family: Montserrat, sans-serif;
@@ -211,6 +208,7 @@ a {
   .kebab-menu ul {
     margin: 0;
     padding: 0;
+
     list-style-type: none;
     list-style-image: none;
   }
@@ -219,17 +217,16 @@ a {
     display: block;
     padding:15px 0 15px 0;
 
+    color: #3d4a57;
+
     border-bottom:#e9e9f1 1px solid;
        border-top:#e9e9f1 1px solid;
-
-    color: #3d4a57;
   }
 
   .kebab-menu li:hover {
     background:#fff;
     border-bottom:#ddd 1px solid;
        border-top:#ddd 1px solid;
-
   }
 
   .header-time {
@@ -255,6 +252,8 @@ a {
 
 /*              Закончил адаптивную первую линейку              */
 
+/*              Начинаю вторую адаптивную линейку             */
+
 .header-second-row {
   display: -webkit-flex;
      display: -moz-flex;
@@ -277,8 +276,8 @@ a {
   display: inline-block;
   margin-left: 20px;
   padding: 10px 25px;
-  vertical-align: middle;
 
+  vertical-align: middle;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   color: #000;
@@ -288,6 +287,8 @@ a {
           box-sizing: border-box;
   background-color: #efeff4;
   border: 1px solid #000;
+
+  transition: all 0.3s linear;
 }
 .header-buy-btn:hover {
   background-color: #e9e9f1;
@@ -298,34 +299,38 @@ a {
 }
 
 .header-nav {
+  height: 100%;
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  height: 100%;
 }
 
 .header-list {
+  height: 100%;
+
+  line-height: 88px;
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  height: 100%;
-  line-height: 88px;
 }
 
 .header-list__item {
   position: relative;
 
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-
   display: inline-block;
-  vertical-align: middle;
   margin: 0 20px;
 
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   color: #000;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  vertical-align: middle;
 }
 
 .header-list__item:last-child {
@@ -339,11 +344,12 @@ a {
   right: 0;
   left: 0;
   bottom: 27px;
-  margin:0 auto;
+
 
   display: block;
   width: 1px;
   height: 1px;
+  margin:0 auto;
 
   transition: all 0.2s linear;
 }
@@ -357,10 +363,6 @@ a {
 @media (min-width: 320px) and (max-width: 767px) {
   .header-second-row {
     display: none;
-  }
-
-  .header-list__item{
-
   }
 }
 
@@ -379,12 +381,11 @@ a {
 
 /*              Закончил стилизовать вторую линию хедора             */
 
-
+/*              Начинаю стилизовать секцию Welcome              */
 
 .welcome-title {
   position: relative;
 
-  text-align: center;
   margin-top: 0px;
   padding-top: 44px;
 
@@ -392,19 +393,19 @@ a {
   font-weight: 700;
   font-size: 40px;
   color: #000;
-
+  text-align: center;
 }
 
 .welcome-title:after {
   content: '';
   position: absolute;
   right: 0; left: 0;
-  margin: 0 auto;
   bottom: -10px;
 
   display: block;
   width: 94px;
   height: 2px;
+  margin: 0 auto;
 
   background-color: #000;
 }
@@ -425,7 +426,6 @@ a {
   margin-left: 15px;
   margin-top: 35px;
   padding: 10px 25px;
-  vertical-align: middle;
 
   font-family: Montserrat, sans-serif;
   font-size: 16px;
@@ -436,6 +436,10 @@ a {
           box-sizing: border-box;
   background-color: #efeff4;
   border: 1px solid #000;
+
+  vertical-align: middle;
+
+  transition: all 0.3s linear;
 }
 
 .welcome-buy-btn:hover {
@@ -445,14 +449,15 @@ a {
   display: none;
 }
 @media (min-width: 1280px) {
-  .welcome-text-container{
+  .welcome-text-container {
     width: 1280px;
     margin: 0 auto;
   }
   .welcome-text {
     margin-left: 44px;
   }
-  .belka-welcome{
+
+  .belka-welcome {
   height: 650px;
 
   background-image: url(../img/first-section-mid-big.jpg);
@@ -461,6 +466,7 @@ a {
           background-size: cover;
   background-position: 50% 70%;
   }
+
   .welcome-buy-btn {
   display: none;
   }
@@ -475,7 +481,6 @@ a {
 
   background-image: url(../img/first-section-mid-big.jpg);
   background-repeat: no-repeat;
-
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 50% 80%;
@@ -497,7 +502,6 @@ a {
 
   background-image: url(../img/first-section-small.jpg);
   background-repeat: no-repeat;
-
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 50% 80%;
@@ -508,6 +512,8 @@ a {
 
 /*              Закончил стилизовать полностью адаптивную первую секцию Welcome             */
 
+/*              Начинаю стилизовать Карусели              */
+
 .tracks {
   height: 860px;
 
@@ -515,7 +521,6 @@ a {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-
   background-position: 50% 70%;
 }
 
@@ -524,7 +529,6 @@ a {
 .tracks-title {
   position: relative;
 
-  text-align: center;
   margin-top: 0px;
   padding-top: 20px;
 
@@ -532,19 +536,19 @@ a {
   font-weight: 700;
   font-size: 40px;
   color: #fff;
-
+  text-align: center;
 }
 
 .tracks-title:after {
   content: '';
   position: absolute;
   right: 0; left: 0;
-  margin: 0 auto;
   bottom: -10px;
 
   display: block;
   width: 94px;
   height: 2px;
+  margin: 0 auto;
 
   background-color: #fff;
 }
@@ -554,17 +558,17 @@ a {
       display: -ms-flex;
        display: -o-flex;
           display: flex;
+  justify-content: space-between;
 
   width: 1155px;
   margin: 0 auto;
-
   padding-top: 50px;
-
-  justify-content: space-between;
 }
+
 .track:nth-child(even) {
   margin-top: 80px;
 }
+
 .track-header {
   width: 215px;
   height: 145px;
@@ -577,31 +581,31 @@ a {
 }
 
 .track-title{
+  padding-top: 25px;
+  padding-bottom: 15px;
+
   text-align: center;
   font-family: Montserrat, sant-serif;
   font-weight: 700;
   font-size: 30px;
   color: #fff;
-
-  padding-top: 25px;
-  padding-bottom: 15px;
 }
 
 .track-high {
+  padding-bottom: 8px;
+
   text-align: center;
   font-family: Montserrat, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-
-  padding-bottom: 8px;
 }
+
 .track-high:before {
   content: '';
   display: inline-block;
    width: 35px;
   height: 22px;
-
   margin-right: 12px;
 
   -webkit-background-size: 100%;
@@ -624,7 +628,6 @@ a {
   display: inline-block;
    width: 24px;
   height: 27px;
-
   margin-right: 19px;
 
   -webkit-background-size: 100%;
@@ -641,16 +644,15 @@ a {
 }
 
 .track-footer-container {
-
   line-height: 155px;
-
   width: 215px;
   height: 155px;
+  padding-left: 15px;
+  padding-right: 15px;
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 15px;
-  padding-right: 15px;
   background-color: #54606a;
 }
 .track:nth-child(even) .track-footer-container {
@@ -660,28 +662,27 @@ a {
   display: inline-block;
 
   line-height: 1.15;
-
   font-family: Montserrat, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #e7e7f2;
-  vertical-align: middle;
   text-align: center;
+
+  vertical-align: middle;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .tracks-container {
+    position: relative;
 
-  position: relative;
-
-  width: 680px;
-  margin: 0 auto;
-  padding-top: 50px;
+    width: 680px;
+    margin: 0 auto;
+    padding-top: 50px;
 
  }
 
   .track:nth-child(even) {
-  margin-top: 0px;
+    margin-top: 0px;
   }
 
   .track {
@@ -689,27 +690,19 @@ a {
 
     /*решился конфликт с отступом и slick.js*/
     padding-left: 6px;
-
-
   }
-
-
 }
 
 @media (min-width: 320px) and (max-width: 766px) {
   .tracks-container {
+    position: relative;
 
-  position: relative;
-
-  width: 215px;
-  margin: 0 auto;
-
-  padding-top: 50px;
-
-  /*justify-content: space-between;*/
+    width: 215px;
+    margin: 0 auto;
+    padding-top: 50px;
   }
   .track:nth-child(even) {
-  margin-top: 0px;
+    margin-top: 0px;
   }
 
   .track{
@@ -718,16 +711,18 @@ a {
 
   .track-header,
   .track:nth-child(even) .track-header {
-
     position: absolute;
     top: 0px;
     z-index: 100;
+
     height: 320px;
-    vertical-align: middle;
 
     background-color: #22313f;
     opacity: 0.75;
+
+    vertical-align: middle;
   }
+
   .track-main {
     position: relative;
   }
@@ -735,18 +730,19 @@ a {
   .tracks {
     height: 707px;
   }
+
   .track:nth-child(even) .track-footer-container {
     background-color: #54606a;
-
   }
 }
+
+/*              Закончил стилизовать качели             */
 
 /*              Акции для старичка              */
 
 .discounts-title {
   position: relative;
 
-  text-align: center;
   margin-top: 0px;
   padding-top: 44px;
 
@@ -754,22 +750,24 @@ a {
   font-weight: 700;
   font-size: 40px;
   color: #000;
-
+  text-align: center;
 }
 
 .discounts-title:after {
   content: '';
   position: absolute;
   right: 0; left: 0;
-  margin: 0 auto;
   bottom: -10px;
 
   display: block;
   width: 94px;
   height: 2px;
+  margin: 0 auto;
 
   background-color: #000;
 }
+
+/*Дальше начинается полноценный mobile-first!)*/
 
 @media (min-width: 320px) {
   .discounts-title{
@@ -778,12 +776,12 @@ a {
   }
 
   .discounts-container {
-  width: 292px;
-  margin: 0 auto;
-  margin-top: 64px;
-  padding-bottom: 50px;
-  font-size: 0;
+    width: 292px;
+    margin: 0 auto;
+    margin-top: 64px;
+    padding-bottom: 50px;
 
+    font-size: 0;
   }
   .discount-item {
   display: inline-block;
@@ -792,10 +790,10 @@ a {
   margin-right: 0;
   margin-top: 10px;
   padding: 20px 14px;
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-
   background: #8e9d9d ;
 
   line-height: 213px;
@@ -827,17 +825,18 @@ a {
   .discounts-title{
     width: 100%;
   }
+
   .discounts-container {
-  width: 740px;
-  margin-top: 64px;
-
+    width: 740px;
+    margin-top: 64px;
   }
-  .discount-item {
-  width: 740px;
-  height: 253px;
-  padding: 20px 44px;
 
-  line-height: 213px;
+  .discount-item {
+    width: 740px;
+    height: 253px;
+    padding: 20px 44px;
+
+    line-height: 213px;
   }
 
   .discount-item:nth-child(1) {
@@ -860,7 +859,6 @@ a {
   .discounts-container {
     width: 1187px;
     margin-top: 86px;
-
   }
 
 
@@ -892,13 +890,12 @@ a {
 }
 
 
-/*Закончил стилизацию акций*/
+/*Закончил стилизацию акций с полноценным mobile-first)*/
 
 
 .form-demonstration-title {
   position: relative;
 
-  text-align: center;
   margin-top: 0px;
   padding-top: 44px;
 
@@ -906,24 +903,23 @@ a {
   font-weight: 700;
   font-size: 40px;
   color: #000;
-
+  text-align: center;
 }
 
 .form-demonstration-title:after {
   content: '';
   position: absolute;
   right: 0; left: 0;
-  margin: 0 auto;
   bottom: -10px;
 
   display: block;
   width: 94px;
   height: 2px;
+  margin: 0 auto;
 
   background-color: #000;
 }
-.form-demonstration-subtitle{
-  text-align: center;
+.form-demonstration-subtitle {
   margin-top: 10px;
   padding-top: 19px;
 
@@ -931,6 +927,7 @@ a {
   font-weight: 400;
   font-size: 25px;
   color: #000;
+  text-align: center;
 }
 .form-demonstration {
   margin-bottom: 94px;
@@ -942,23 +939,23 @@ a {
   margin-top: 40px;
   padding: 40px 10px;
   padding-top: 20px;
-  background-color: #ccc;
 
   text-align: center;
+
+  background-color: #ccc;
 }
 
 .demonstration-item {
-  padding-bottom: 20px;
-  line-height: 35px;
-
   width: 260px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  line-height: 35px;
   font-family: Montserrat, sant-serif;
   font-weight: 400;
   font-size: 20px;
   color: #000;
   text-align: left;
-
-  margin: 0 auto;
 }
 
 .demonstration-item input {
@@ -970,7 +967,6 @@ a {
 
   border: 2px solid #bdc9d5;
   border-radius: 5px;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -978,15 +974,7 @@ a {
 
 .demonstration-item input:focus {
   -webkit-box-shadow: 0px 0px 10px 0px #8e9d9d;
-  box-shadow: 0px 0px 10px 0px #8e9d9d;
-}
-
-.demonstration-item label {
-  text-align: left;
-}
-
-.demonstration-item__label {
-  text-align: left;
+          box-shadow: 0px 0px 10px 0px #8e9d9d;
 }
 
 .demonstration-item-check {
@@ -998,8 +986,8 @@ a {
   font-size: 14px;
   color: #000;
   line-height: 20px;
-
 }
+
 .demonstration-item-check a {
   text-decoration: underline;
 }
@@ -1039,12 +1027,10 @@ a {
 h1 {
   font-family: Montserrat, sant-serif;
   font-weight: 700;
-
-
-
   color: #000;
 }
-.futu{
+
+.futu {
   height: 200px;
 }
 
