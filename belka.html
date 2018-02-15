@@ -22,8 +22,8 @@
       <div class="first-row__column header-marker"><span>Выборгское ш.,220</span></div>
       <div class="header-kebab"> </div>
       <div class="header-cross">&#735;</div>
+      </div>
 
-    </div>
       <div class="kebab-menu">
         <ul class="kebab-menu-list">
           <li><a href="#">Трассы</a></li>
@@ -34,7 +34,26 @@
         </ul>
       </div>
 
-    <div class="header-second-row">
+<!--
+Изучение и внедрение скриптов начал после верстки
+нескольких секций, поэтому выше ввел дубль "меню"
+для мобильного кебаба jQuery, как максимально
+быстрое решение.
+
+Знаю, что оно не идеально, и полностью это осознаю,
+но не хочу тратить время на переделывание логики всего
+меню для "тренировочного, не в продакшен" макета.
+
+Если это вообще кто-нибудь прочитает и ему будет не все
+равно, форкните и закиньте пул-реквест, мол:
+"Я такие дела не одобряю!"
+"Ну, всякое бывает, и не такое видели."
+"Как починишь логику, звони 8 (***)***-**-**
+возьмем в штат верстать"
+-->
+
+
+      <div class="header-second-row">
       <div class="header-second-row__left">
         <div class="logo"><img src="img/logo.png" alt="логотип Белка - центр скалолазания" width="88" height="64"></div>
         <a href="" class="header-buy-btn">Купить билет</a>
@@ -193,24 +212,24 @@ Cкалолазы смогут найти подробную схему
 
       <form class="get-contact" action="https://echo.belka.ru" method="post">
 
-        <p class="demonstration-item">
-          Введите Ваше имя
-          <input type="text" name="username" placeholder="Джон Сноу">
-        </p>
+        <div class="demonstration-item">
+          <label for="username">Введите Ваше имя</label>
+          <input type="text" name="username" id="username" placeholder="Джон Сноу">
+        </div>
 
-        <p class="demonstration-item">
+        <div class="demonstration-item">
           <label for="e-mail">Введите Ваш e-mail</label>
           <input type="text" name="e-mail" id="e-mail" placeholder="Lord-cmnder@nights-watch.com">
-        </p>
+        </div>
 
-        <p class="demonstration-item">
-          Введите Ваш телефон
-        <input type="text"  name="tel-number" placeholder="+7 (___) ___-__-__">
-        </p>
+        <div class="demonstration-item">
+          <label for="tel-number">Введите Ваш телефон</label>
+        <input type="text"  name="tel-number" id="tel-number" placeholder="+7 (___) ___-__-__">
+        </div>
 
-        <p class="demonstration-item-check">
+        <div class="demonstration-item-check">
         <input type="checkbox" required name="agree"> Я согласен, что <a href="https://github.com/LitvinenkoBD" target="_blank">Борис</a> продемонстрировал работу с формами
-        </p>
+        </div>
 
         <button class="form-buttom" type="submit">Отправить</button>
       </form>

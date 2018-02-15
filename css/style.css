@@ -43,6 +43,7 @@ https://google-webfonts-helper.herokuapp.com/*/
 
 /*              Закончил подключать шрифты              */
 
+
 * {
   padding: 0;
    margin: 0;
@@ -52,6 +53,8 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+/*              Первая линия              */
 
 .header-first-row {
   display: -webkit-flex;
@@ -946,26 +949,46 @@ a {
 
 .demonstration-item {
   padding-bottom: 20px;
-  line-height: 30px;
+  line-height: 35px;
 
+  width: 260px;
   font-family: Montserrat, sant-serif;
   font-weight: 400;
   font-size: 20px;
   color: #000;
   text-align: left;
+
+  margin: 0 auto;
 }
 
 .demonstration-item input {
-  width: 250px;
-  height: 30px;
+  width: 260px;
+  height: 35px;
   padding-left: 10px;
 
   font-size: 16px;
 
-
-  border: 1px solid #8e9d9d;
+  border: 2px solid #bdc9d5;
   border-radius: 5px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+.demonstration-item input:focus {
+  -webkit-box-shadow: 0px 0px 10px 0px #8e9d9d;
+  box-shadow: 0px 0px 10px 0px #8e9d9d;
+}
+
+.demonstration-item label {
+  text-align: left;
+}
+
+.demonstration-item__label {
+  text-align: left;
+}
+
 .demonstration-item-check {
   width: 200px;
   margin: 0 auto;
@@ -1005,6 +1028,13 @@ a {
   border: 1px solid #fff;
   color: #fff;
 }
+
+
+
+
+
+
+
 
 h1 {
   font-family: Montserrat, sant-serif;
