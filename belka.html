@@ -195,7 +195,7 @@ Cкалолазы смогут найти подробную схему
     </section>
 
     <section class="form-demonstration">
-      <h2 class="form-demonstration-title">Демонстрация работы с формами</h2>
+      <h2 class="form-demonstration-title">Работа с формами</h2>
       <p class="form-demonstration-subtitle">Здесь я напишу что-нибудь остроумное, если придумаю</p>
 
       <form class="get-contact" action="https://echo.belka.ru" method="post">
@@ -225,54 +225,58 @@ Cкалолазы смогут найти подробную схему
     </section>
   </main>
 
-  <footer class="main-footer">
-    <div class="used-features">
-      <h2 class="main-footer__title"> При верстке данного макета были использованны:</h2>
-      <ul class="used-features__list">
-        <li class="used-features__item">
-          <h3>HTML5</h3>
-          <p> Старался делать целевую, адекватную семантику. Надеюсь, получилось приблизится к прекрасному, с учетом того холивара, что стоит вокруг этой темы.</p>
-        </li>
+  <footer class="main-footer clearfix">
+    <h2 class="main-footer__title">Дисклеймер на Float</h2>
+    <div class="main-footer__container">
+      <div class="used-features">
+        <h3 class="used-features-title">При верстке данного макета были использованны:</h3>
+        <ul class="used-features__list">
+          <li class="used-features__item">
+            <h4>HTML5</h4>
+            <p> Старался делать целевую, адекватную семантику. Надеюсь, получилось приблизится к прекрасному, с учетом того холивара, что стоит вокруг этой темы.</p>
+          </li>
 
-        <li>
-          <h3>БЭМ</h3>
-          <p>БЭМ + каскад, где это оправдано и удобно. Я, конечно, уважаю ребят из Яндекса, но и в w3c тоже есть умные люди.</p>
-        </li>
+          <li class="used-features__item">
+            <h4>БЭМ</h4>
+            <p>БЭМ + каскад, где это оправдано и удобно. Я, конечно, уважаю ребят из Яндекса, но и в w3c тоже есть умные люди.</p>
+          </li>
 
-        <li>
-          <h3>CSS3</h3>
-          <p> Анимации, псевдоклассы, псевдоэлементы, и попытка придерживаться единого читабельного код-гайда.</p>
-        </li>
+          <li class="used-features__item">
+            <h4>CSS3</h4>
+            <p> Анимации, псевдоклассы, псевдоэлементы, (dib) + float для доходяги и попытка придерживаться единого читабельного код-гайда.</p>
+          </li>
 
-        <li>
-          <h3>@media</h3>
-          <p>Один блок на полноценном mobile-first. Остальное казалось правильнее делать не следуя этой методологии. Либо нехватка опыта, либо проницательность - время покажет.</p>
-        </li>
+          <li class="used-features__item">
+            <h4>@media</h4>
+            <p>Один блок на полноценном mobile-first. Остальное казалось правильнее делать не следуя этой методологии. Либо нехватка опыта, либо проницательность - время покажет.</p>
+          </li>
 
-        <li>
-          <h3>jQuery + slick.js</h3>
-          <p>Пока на этапе благоговения перед их возможностями и что они вообще работают, но другие крутые фреймворки и нативный js уже машут мне рукой из прекрасного далёка.</p>
-        </li>
+          <li class="used-features__item">
+            <h4>jQuery + slick.js</h4>
+            <p>Пока на этапе благоговения перед их возможностями и что они вообще работают, но другие крутые фреймворки и нативный js уже машут мне рукой из прекрасного далёка.</p>
+          </li>
 
-        <li>
-          <h3>Git + cmndr</h3>
-          <p>Git add . + git commit -m + git push -u origin master. Ну и алиасы, что бы вот это все быстрее.</p>
-        </li>
+          <li class="used-features__item">
+            <h4>Git + cmndr</h4>
+            <p>Git add . + git commit -m + git push -u origin master. Ну и алиасы, что бы вот это все быстрее.</p>
+          </li>
 
-        <li>
-          <h3>emmet</h3>
-          <p>Интересно, про это вообще нужно писать?</p>
-        </li>
-      </ul>
-    </div>
+          <li class="used-features__item">
+            <h4>emmet</h4>
+            <p>Интересно, про это вообще нужно писать?</p>
+          </li>
+        </ul>
+      </div>
 
-    <div class="contact-litvinenko">
-      <img src="" alt="Литвиненко Борис Дмитриевич в древней Греческой колонии">
-      <p>Связаться со мной по вопросам работы и сотрудничества</p>
-      <a class="social-button"></a>
-      <a class="social-button"></a>
-      <a class="social-button"></a>
-      <a href="tel://+79313149807">Позвонить в один клик</a>
+      <div class="contact-litvinenko">
+        <img src="img/me.jpg" alt="Литвиненко Борис Дмитриевич в древней Греческой колонии - Фазелис" width="300" height="533" >
+        <h3 class="contact-litvinenko__semantic-hide-title">Литвиненко Борис Дмитриевич и его контакты</h3>
+        <h4>Связаться со мной по вопросам работы и сотрудничества</h4>
+        <a class="social-button"></a>
+        <a class="social-button"></a>
+        <a class="social-button"></a>
+        <a href="tel://+79313149807">Позвонить в один клик, или набрать 8(931)314-98-07</a>
+      </div>
     </div>
   </footer>
 

@@ -920,8 +920,7 @@ a {
   background-color: #000;
 }
 .form-demonstration-subtitle {
-  margin-top: 10px;
-  padding-top: 19px;
+  margin-top: 30px;
 
   font-family: Montserrat, sant-serif;
   font-weight: 400;
@@ -1019,23 +1018,142 @@ a {
 
 /*              Конец блока с формами             */
 
+.main-footer {
+  padding-bottom: 90px;
+}
+.main-footer.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
+.main-footer {
+  background-color: #ccc/*#8e9d9d*/;
+}
 
+.main-footer__title {
+  position: relative;
 
+  float: left;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 44px;
 
-
-h1 {
   font-family: Montserrat, sant-serif;
   font-weight: 700;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+}
+
+.main-footer__title:after {
+  content: '';
+  position: absolute;
+  right: 0; left: 0;
+  bottom: -10px;
+
+  display: block;
+  width: 94px;
+  height: 2px;
+  margin: 0 auto;
+
+  background-color: #000;
+}
+
+.used-features {
+  float: left;
+}
+
+.used-features-title {
+  margin-top: 40px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+
+}
+
+.used-features__list{
+  list-style-type: none;
+}
+.used-features__item,
+.contact-litvinenko h4 {
+  margin-top: 20px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 700;
+  font-size: 16px;
   color: #000;
 }
 
-.futu {
-  height: 200px;
+.used-features__item p {
+  margin-top: 5px;
+
+  font-family: Montserrat, sant-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.contact-litvinenko {
+  float: right;
+
+  margin-top: 53px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+.contact-litvinenko__semantic-hide-title {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .main-footer__container {
+  width: 320px;
+  margin: 0 auto;
+  }
+  .used-features {
+  width: 100%;
+  margin: 0 15px;
+  }
+  .contact-litvinenko {
+  width: 100%;
+  padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer__container {
+  width: 768px;
+  }
+  .used-features {
+  margin: 0 15px;
+  }
+  .contact-litvinenko {
+  padding: 0 15px;
+  }
 }
 
 
+@media (min-width: 1280px) {
+  .main-footer__container {
+  width: 1280px;
+  }
 
+  .used-features {
+  margin: 0 44px;
+  width: 50%;
+  }
+
+  .contact-litvinenko {
+  padding: 0 44px;
+  width: 40%;
+  }
+}
 
 
 
