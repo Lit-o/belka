@@ -941,7 +941,7 @@ a {
 
   text-align: center;
 
-  background-color: #ccc;
+  background-color: #e7e7e7;
 }
 
 .demonstration-item {
@@ -1028,7 +1028,7 @@ a {
 }
 
 .main-footer {
-  background-color: #ccc
+  background-color: #e7e7e7;
 }
 
 .main-footer__title {
@@ -1090,7 +1090,7 @@ a {
   margin-top: 40px;
   padding-bottom: 5px;
 
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ccc;
 }
 .used-features__item:first-child {
   margin-top: 20px;
@@ -1204,7 +1204,7 @@ a {
   display: inline-block;
 
   margin-top: 20px;
-  margin-right: 40px;
+  margin-right: 20px;
   margin-left: 5px;
 
   background: url('../img/1sprite-ico.png') no-repeat;
