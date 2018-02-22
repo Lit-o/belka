@@ -1185,14 +1185,14 @@ a {
 .social-button__container{
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .social-button {
   display: inline-block;
 
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 5px;
+  margin: 20px 10px 0 10px;
+
 
   background: url('../img/social-ico.png') no-repeat;
   overflow: hidden;
