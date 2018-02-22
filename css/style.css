@@ -1274,6 +1274,29 @@ a {
 }
 
 
+/*to top button*/
+.to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 300px;
+  padding: 10px;
+  padding-top: 20px;
+  background-color: rgba(255,255,255, 0.5 );
+  border: 1px solid #ccc;
+  color: #ccc;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .to-top{
+    right: 40px;
+  bottom: 40px;
+  padding: 16px 16px 8px 16px;
+
+  font-size: 20px;
+  }
+}
 
 
 /*------------------------------------ Slider------------------------------------- */

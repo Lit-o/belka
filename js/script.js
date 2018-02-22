@@ -58,6 +58,7 @@ $( document ).ready(function() {
 
 });
 
+// скролл к контактам
 
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
@@ -69,4 +70,45 @@ $(document).ready(function(){
 
         $('body,html').animate({scrollTop: top}, 1500);
     });
+});
+
+$(document).ready(function(){
+    $("#menu__mob").on("click","a", function (event) {
+        event.preventDefault();
+
+        var id  = $(this).attr('href'),
+
+            top = $(id).offset().top;
+
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+// скролл наверх
+
+$(document).ready(function(){
+
+  $('#scroll-top-btn').on('click', function (event) {
+    event.preventDefault();
+    $('body,html').animate({'scrollTop':0},1000);
+  });
+
+  var timer;
+  $(window).on('scroll', function(){
+    if ( timer ) clearTimeout(timer);
+    timer = setTimeout(function(){
+      showScrollTopBtn();
+    }, 100);
+  });
+
+  showScrollTopBtn();
+
+  function showScrollTopBtn() {
+    if( $(document).scrollTop() > 500 ) {
+      $('#scroll-top-btn').fadeIn();
+    }
+    else {
+      $('#scroll-top-btn').fadeOut();
+    }
+  }
+
 });
