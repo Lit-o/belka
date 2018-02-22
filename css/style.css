@@ -74,7 +74,7 @@ a {
 .first-row__column {
   margin: 0 25px;
 
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
@@ -196,7 +196,7 @@ a {
 
     width:100%;
 
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
     font-weight:400;
     text-align:center;
     font-size:18px;
@@ -278,7 +278,7 @@ a {
   padding: 10px 25px;
 
   vertical-align: middle;
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 16px;
   color: #000;
 
@@ -322,7 +322,7 @@ a {
   display: inline-block;
   margin: 0 20px;
 
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 18px;
   color: #000;
 
@@ -389,7 +389,7 @@ a {
   margin-top: 0px;
   padding-top: 44px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 700;
   font-size: 40px;
   color: #000;
@@ -414,7 +414,7 @@ a {
   margin-left: 15px;
   margin-top: 114px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -427,7 +427,7 @@ a {
   margin-top: 35px;
   padding: 10px 25px;
 
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 16px;
   color: #000;
 
@@ -449,7 +449,7 @@ a {
   display: none;
 }
 @media (min-width: 1280px) {
-  .welcome-text-container {
+  .welcome-text__container {
     width: 1280px;
     margin: 0 auto;
   }
@@ -482,7 +482,7 @@ a {
   background-image: url(../img/first-section-mid-big.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover;
+          background-size: cover;
   background-position: 50% 80%;
   }
 
@@ -503,14 +503,14 @@ a {
   background-image: url(../img/first-section-small.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover;
+          background-size: cover;
   background-position: 50% 80%;
   }
 
 }
 
-
 /*              Закончил стилизовать полностью адаптивную первую секцию Welcome             */
+
 
 /*              Начинаю стилизовать Карусели              */
 
@@ -520,7 +520,7 @@ a {
   background-image: url(../img/tracks-big.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover;
+          background-size: cover;
   background-position: 50% 70%;
 }
 
@@ -532,7 +532,7 @@ a {
   margin-top: 0px;
   padding-top: 20px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 700;
   font-size: 40px;
   color: #fff;
@@ -585,7 +585,7 @@ a {
   padding-bottom: 15px;
 
   text-align: center;
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 700;
   font-size: 30px;
   color: #fff;
@@ -595,7 +595,7 @@ a {
   padding-bottom: 8px;
 
   text-align: center;
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
@@ -618,7 +618,7 @@ a {
 }
 .track-age {
   text-align: center;
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
@@ -662,7 +662,7 @@ a {
   display: inline-block;
 
   line-height: 1.15;
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #e7e7f2;
@@ -738,6 +738,7 @@ a {
 
 /*              Закончил стилизовать качели             */
 
+
 /*              Акции для старичка              */
 
 .discounts-title {
@@ -746,7 +747,7 @@ a {
   margin-top: 0px;
   padding-top: 44px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 700;
   font-size: 40px;
   color: #000;
@@ -767,7 +768,10 @@ a {
   background-color: #000;
 }
 
-/*Дальше начинается полноценный mobile-first!)*/
+/*              Конец блока с акциями             */
+
+
+/*              Дальше начинается полноценный mobile-first            */
 
 @media (min-width: 320px) {
   .discounts-title{
@@ -812,7 +816,7 @@ a {
   .discount-description {
     display: inline-block;
 
-    font-family: Montserrat, sant-serif;
+    font-family: Montserrat, Arial, sant-serif;
     font-weight: 700;
     font-size: 25px;
     color: #fff;
@@ -889,24 +893,25 @@ a {
     }
 }
 
+/*Закончил стилизацию акций с полноценным mobile-first*/
 
-/*Закончил стилизацию акций с полноценным mobile-first)*/
 
+/*Начинаю стилизацию формы*/
 
-.form-demonstration-title {
+.form-demonstration__title {
   position: relative;
 
   margin-top: 0px;
   padding-top: 44px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 700;
   font-size: 40px;
   color: #000;
   text-align: center;
 }
 
-.form-demonstration-title:after {
+.form-demonstration__title:after {
   content: '';
   position: absolute;
   right: 0; left: 0;
@@ -919,10 +924,10 @@ a {
 
   background-color: #000;
 }
-.form-demonstration-subtitle {
+.form-demonstration__subtitle {
   margin-top: 30px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 25px;
   color: #000;
@@ -950,7 +955,7 @@ a {
   padding-bottom: 20px;
 
   line-height: 35px;
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 20px;
   color: #000;
@@ -980,7 +985,7 @@ a {
   width: 200px;
   margin: 0 auto;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -999,7 +1004,7 @@ a {
   padding: 5px 10px;
   margin-top: 10px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #000;
@@ -1017,6 +1022,9 @@ a {
 }
 
 /*              Конец блока с формами             */
+
+
+/*              Начинаю блок Дисклеймер           */
 
 .main-footer {
   padding-bottom: 90px;
@@ -1039,7 +1047,7 @@ a {
   margin-top: 0px;
   padding-top: 44px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 700;
   font-size: 40px;
   color: #000;
@@ -1067,7 +1075,7 @@ a {
 .used-features-title {
   margin-top: 40px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 25px;
   color: #000;
@@ -1081,7 +1089,7 @@ a {
 .contact-litvinenko h4 {
   margin-top: 20px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 700;
   font-size: 18px;
   color: #000;
@@ -1103,7 +1111,7 @@ a {
   margin-top: 5px;
 
   line-height: 30px;
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #000;
@@ -1127,7 +1135,7 @@ a {
   display: block;
   padding: 10px 5px 0px 5px;
 
-  font-family: Montserrat, sant-serif;
+  font-family: Montserrat, Arial, sant-serif;
   font-weight: 400;
   font-size: 16px;
   color: #000;
